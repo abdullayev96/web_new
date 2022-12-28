@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Landing Page - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="{% static 'https://use.fontawesome.com/releases/v5.15.3/js/all.js' %}" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css' %}" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' %}" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="http://127.0.0.1:8000/export_buy/">Hello welcome my site</a>
+                <a class="btn btn-primary" href="https://delx.uz/">Sign In</a>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead text-white text-center" style="background: url({%  static 'img/bg-masthead.jpg' %}) no-repeat center center;">
+            <div class="overlay" ></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto"><h1 class="mb-5">Register for my course or opportunity to develop your business!</h1></div>
+                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+<!--                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg" required name="email" type="email" placeholder="Enter your email..." />
+                                </div>
+                                <br>
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg" required name="name" type="text" placeholder="Enter your name..." />
+                                </div>
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg" required name="phone" type="text" placeholder="Enter your number..." />
+                                </div>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-success btn-md">Submit</button>
+                        </form>
+                        <br>
+                         <form method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg" required name="name" type="text" placeholder="Enter your name..." />
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <button class="btn btn-block btn-lg btn-primary" type="submit">save</button>
+                                </div>
+                            </div>
+                        </form>
+-->              <form method="post">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label class=" form-control-label">Enter your name... </label>
+                                    <input type="text" name="name"  class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class=" form-control-label">Enter your email..</label>
+                                    <input type="text" name="email"  class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label  class=" form-control-label">Enter your number...</label>
+                                    <input type="number" name="number"  class="form-control">
+<!--                                    <input style="margin-top:20px; background-color:blue; color:white; width:100px;" type="button" value="Submit" >  ---->
+                                </div>
+                                <button type="submit" class="btn btn-success btn-md">Submit</button>
+                        </form>
+                        <!--
+                        <br>
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg" required name="number" type="number" placeholder="Enter your number..." /></div>
+                                <div class="col-12 col-md-3"><button class="btn btn-block btn-lg btn-primary" type="submit">Sign up!</button></div>
+                            </div>
+                        </form>
+                        --->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Icons Grid-->
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="icon-screen-desktop m-auto text-primary"></i></div>
+                            <h3>My experience</h3>
+                            <p class="lead mb-0">I have 1.5 years of experience. I have been mentoring since 1 year. In my diploma work at the university,
+                                I made a program that works with Face-control.
+                                I made many websites and telegram bots</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="icon-layers m-auto text-primary"></i></div>
+                            <h3>My information about myself.</h3>
+                            <p class="lead mb-0">I am Abdullayev Burhon, I am from Fargona,
+                                I graduated from Tashkent Technical University,
+                                I learned Python programming language from Botir Ziyatov at the Proneo educational center,
+                                at first I gained my experience by taking projects in our group called delx,
+                                then I worked at the Napa company, It Edu educational center I worked and now I have been working as a mentor for 1 year</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="icon-check m-auto text-primary"></i></div>
+                            <h3>Easy to Use</h3>
+                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Showcases-->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'img/bg-showcase-1.jpg' %})"></div>
+                    <div class="col-lg-6 order-lg-0 my-auto showcase-text">
+                        <h2>Fully Responsive Design</h2>
+                        <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static '/img/bg-showcase-2.jpg' %})"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Updated For Bootstrap 4</h2>
+                        <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static '/img/django.png' %})"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Django Rest_framework</h2>
+                        <p class="lead mb-0">If you want to organize django framework then contact us</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'img/py.jpg' %})"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Python or Telegram bot </h2>
+                        <p class="lead mb-0">Maʼlumotlar Tuzilmasi va Algoritmlar
+                            har bir dasturchi bilishi lozim bo’lgan eng dolzarb mavzulardan.
+                            Dasturchi sifatida sizning asosiy vazifangiz ma’lumotlarga ishlov berish.
+                            Ma’lumotlar tuzilmasi bizga ma’lumotlarni saqlashda kompyuter xotirasidan unumli foydalanishni, algoritmlar esa ma’lumotlarga ishlov berishning samarali tez va usullarini o’rgatadi.
+
+                            Kurs tarkibi:
+
+                            ✔️ Algoritm nima?
+                            ✔️ Ma'lumotlar tuzilmalari nima uchun kerak?
+                            ✔️ Algoritmlarni baholash. Big O
+                            ✔️ Qidirish algoritmlari
+                              - Linear search
+                              - Binary search
+                            ✔️ Array va Linked List
+                            ✔️ Selection sort algoritmi
+                            ✔️ Rekursiya va Stack
+                            ✔️ Quicksort algoritmi
+                            ✔️ Divide and Conquer tamoyili
+                            ✔️ Bubble sort va Merge sort algoritmlari
+                            ✔️ Graph ma'lumotlar tuzilmasi
+                            ✔️ Greedy algoritmlar
+                            ✔️ Dynamic dasturlash
+                            ✔️ K-nearest negihbor algoritmi
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials-->
+        <section class="testimonials text-center bg-light">
+            <div class="container">
+                <h2 class="mb-5">My information about myself...</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="{% static 'img/Burhon.jpg' %}" alt="..." />
+                            <h5>I am Senior  Web developer</h5>
+                            <p class="font-weight-light mb-0">" Don't stop growing your business"</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="{% static 'img/good.jpg' %}" alt="..." />
+                            <h5>My certificate </h5>
+                            <p class="font-weight-light mb-0">" If you need a good developer, contact us and develop your business"</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="{%  static 'img/img.png' %}" alt="..." />
+                            <h5>Backend Developer</h5>
+                            <p class="font-weight-light mb-0">" If you want to develop your business, contact us"</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="{% static 'img/mashine_learn.jpg' %}" alt="..." />
+                            <h5>I am Backend developer.</h5>
+                            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="{% static 'img/botir.jpg' %}" alt="..." />
+                            <h5>My teacher Backend developer</h5>
+                            <p class="font-weight-light mb-0">"Thanks so much for making "</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="{% static 'img/img_1.png' %}" alt="..." />
+                            <h5>Super</h5>
+                            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <section class="call-to-action text-white text-center" style="background: url({%  static 'img/bg-masthead.jpg' %}) no-repeat center center;">
+            <div class="overlay"  ></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto"><h2 class="mb-4">Ready to get started? Sign up now!</h2></div>
+                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+<!--                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg"  required name="email" type="email" placeholder="Enter your email..." />
+                                </div>
+                                <br>
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg" required name="name" type="text" placeholder="Enter your name..." />
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <button class="btn btn-block btn-lg btn-primary" type="submit">save!</button>
+                                </div>
+                           </div>
+                            <button type="submit" class="btn btn-success btn-md">Submit</button>
+                     </form>
+-->
+<!--                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                    <input class="form-control form-control-lg" required name="name" type="text" placeholder="Enter your name..." />
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <button class="btn btn-block btn-lg btn-primary" type="submit">save!</button>
+                                </div>
+                            </div>
+                            </form>
+-->              <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label class=" form-control-label" >Enter your name ... </label>
+                                <input type="text" name="name"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class=" form-control-label">Enter your email ...</label>
+                                <input type="text" name="email"  class="form-control">
+<!--                                    <input style="margin-top:20px; background-color:blue; color:white; width:100px;" type="button" value="Submit" >  ---->
+                            </div>
+                            <div class="form-group">
+                                <label class=" form-control-label">Enter your number ...</label>
+                                <input type="number" name="number"  class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-md">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="https://t.me/www_buymax">About myself </a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="https://delx.uz/"> Our Contact</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=u9hX9_zpI1g">My team</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="https://github.com/abdullayev96">My work </a></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">© This is Website make by Burhon developer 2021. All Rights Reserved.</p>
+                    </div>
+                    <br>
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-3">
+                                <a href="https://t.me/www_buymax"><i class="fab fa-telegram fa-2x fa-fw"></i></a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="#!"><i class="fab fa-twitter-square fa-2x fa-fw"></i></a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="https://www.youtube.com/watch?v=u9hX9_zpI1g"><i class="fab fa-youtube fa-2x fa-fw"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/abdullayev96"><i class="fab fa-github fa-2x fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+    </body>
+</html>
